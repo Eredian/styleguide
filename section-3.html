@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Coveo Styleguide</title>
+    <meta name="description" content=""/>
+    <meta name="generator" content="kss-node"/>
+    <link rel="stylesheet" href="public/kss.css"/>
+    <link rel="stylesheet" href="public/style.css"/>
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body id="kss-node">
+<a href="https://github.com/Coveo/styleguide"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+<div class="kss-wrapper">
+    <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+            <header class="kss-header">
+                <h1 class="kss-doc-title"><a href="./">Coveo Styleguide</a></h1>
+            </header>
+            <nav class="kss-nav">
+                <ul class="kss-menu" data-kss-ref="3">
+                    <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                    <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span
+                            class="kss-name">Panels</span></a></li>
+                    <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span
+                            class="kss-name">Text and Decoration</span></a></li>
+                    <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span
+                            class="kss-name">Buttons</span></a></li>
+                    <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span
+                            class="kss-name">Tables</span></a></li>
+                    <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span
+                            class="kss-name">Controls</span></a></li>
+                    <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span
+                            class="kss-name">Forms</span></a></li>
+                </ul>
+                <ul class="kss-menu-child">
+                    <li class="kss-menu-item"><a href="#section-3.1"><span class="kss-ref">3.1</span><span
+                            class="kss-name">Button Tags</span></a></li>
+                    <li class="kss-menu-item"><a href="#section-3.2"><span class="kss-ref">3.2</span><span
+                            class="kss-name">Button Options</span></a></li>
+                    <li class="kss-menu-item"><a href="#section-3.3"><span class="kss-ref">3.3</span><span
+                            class="kss-name">Button Slim</span></a></li>
+                    <li class="kss-menu-item"><a href="#section-3.4"><span class="kss-ref">3.4</span><span
+                            class="kss-name">Buttons States</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="kss-content">
+        <article class="kss-article">
+            <section id="section-3" class="kss-section kss-depth-1">
+                <h1 class="kss-title"><span class="kss-ref">3</span> Buttons</h1>
+                <div class="kss-description">
+                    <p>Covers styles for buttons. They are all built from the same base class. You can use both link or button element.</p>
+
+                </div>
+            </section>
+            <section id="section-3.1" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">3.1</span> Button Tags</h1>
+                <div class="kss-description">
+                    <p>Use the btn class on an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element.</p>
+
+                </div>
+                <div class="kss-modifier-block">
+                    <div class="kss-modifier kss-modifier-original">
+                        <div class="kss-modifier-example">
+                            <a class="btn">Link</a>
+<button type="button" class="btn">Button</button>
+                        </div>
+                    </div>
+                    <div class="kss-markup">
+                        <pre><code data-language="html">&lt;a class=&quot;btn&quot;&gt;Link&lt;/a&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section id="section-3.2" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">3.2</span> Button Options</h1>
+                <div class="kss-description">
+                    <p>Use any of the available button classes to quickly create a styled button.</p>
+
+                </div>
+                <div class="kss-modifier-block">
+                    <div class="kss-modifier kss-modifier-original">
+                        <div class="kss-modifier-example">
+                            <button type="button" class="btn">Default</button>
+<button type="button" class="btn btn-primary">Action</button>
+<button type="button" class="btn btn-secondary">Info</button>
+<button type="button" class="btn btn-danger">Danger</button>
+                        </div>
+                    </div>
+                    <div class="kss-markup">
+                        <pre><code data-language="html">&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section id="section-3.3" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">3.3</span> Button Slim</h1>
+                <div class="kss-description">
+                    <p>Use the btn-slim class on an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element. Use any of the available button classes to quickly create a slim styled button.</p>
+
+                </div>
+                <div class="kss-modifier-block">
+                    <div class="kss-modifier kss-modifier-original">
+                        <div class="kss-modifier-example">
+                            <a class="btn-slim">Link</a>
+<button type="button" class="btn-slim">Default</button>
+<button type="button" class="btn-slim btn-primary">Action</button>
+<button type="button" class="btn-slim btn-secondary">Info</button>
+<button type="button" class="btn-slim btn-danger">Danger</button>
+                        </div>
+                    </div>
+                    <div class="kss-markup">
+                        <pre><code data-language="html">&lt;a class=&quot;btn-slim&quot;&gt;Link&lt;/a&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn-slim&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn-slim btn-primary&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn-slim btn-secondary&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn-slim btn-danger&quot;&gt;Danger&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section id="section-3.4" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">3.4</span> Buttons States</h1>
+                <div class="kss-modifier-block">
+                    <div class="kss-modifier kss-modifier-original">
+                        <div class="kss-modifier-example">
+                            <button type="button" class="btn btn-primary {$modifiers}">Action</button>
+                        </div>
+                    </div>
+                    <div class="kss-modifier">
+                        <div class="kss-modifier-head">
+                            <div class="kss-modifier-name">:hover</div>
+                            <div class="kss-modifier-description">
+                                <p>Highlight the button when hovered.</p>
+
+                            </div>
+                        </div>
+                        <div class="kss-modifier-example">
+                            <button type="button" class="btn btn-primary pseudo-class-hover">Action</button>
+                        </div>
+                    </div>
+                    <div class="kss-modifier">
+                        <div class="kss-modifier-head">
+                            <div class="kss-modifier-name">:disabled</div>
+                            <div class="kss-modifier-description">
+                                <p>Make the button change appearance to reflect it being disabled.</p>
+
+                            </div>
+                        </div>
+                        <div class="kss-modifier-example">
+                            <button type="button" class="btn btn-primary pseudo-class-disabled">Action</button>
+                        </div>
+                    </div>
+                    <div class="kss-markup">
+                        <pre><code data-language="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary {$modifiers}&quot;&gt;Action&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer class="kss-footer">
+        </footer>
+    </div>
+</div>
+<script src="public/kss.js"></script>
+<script src="public/jquery-1.11.2.min.js"></script>
+<script src="public/main.js"></script>
+<script src="js/CoveoStyleGuide.Dependencies.js"></script>
+<!--[if gt IE 8]><!-->
+<script src="public/rainbow.min.js"></script>
+<!--<![endif]-->
+</body>
+</html>

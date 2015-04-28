@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Coveo Styleguide</title>
+    <meta name="description" content=""/>
+    <meta name="generator" content="kss-node"/>
+    <link rel="stylesheet" href="public/kss.css"/>
+    <link rel="stylesheet" href="public/style.css"/>
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body id="kss-node">
+<a href="https://github.com/Coveo/styleguide"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+<div class="kss-wrapper">
+    <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+            <header class="kss-header">
+                <h1 class="kss-doc-title"><a href="./">Coveo Styleguide</a></h1>
+            </header>
+            <nav class="kss-nav">
+                <ul class="kss-menu" data-kss-ref="6">
+                    <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                    <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span
+                            class="kss-name">Panels</span></a></li>
+                    <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span
+                            class="kss-name">Text and Decoration</span></a></li>
+                    <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span
+                            class="kss-name">Buttons</span></a></li>
+                    <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span
+                            class="kss-name">Tables</span></a></li>
+                    <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span
+                            class="kss-name">Controls</span></a></li>
+                    <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span
+                            class="kss-name">Forms</span></a></li>
+                </ul>
+                <ul class="kss-menu-child">
+                    <li class="kss-menu-item"><a href="#section-6.1"><span class="kss-ref">6.1</span><span
+                            class="kss-name">Table form</span></a></li>
+                    <li class="kss-menu-item"><a href="#section-6.2"><span class="kss-ref">6.2</span><span
+                            class="kss-name">Block form (horizontal form)</span></a></li>
+                    <li class="kss-menu-item"><a href="#section-6.3"><span class="kss-ref">6.3</span><span
+                            class="kss-name">Coveo Flex Form</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="kss-content">
+        <article class="kss-article">
+            <section id="section-6" class="kss-section kss-depth-1">
+                <h1 class="kss-title"><span class="kss-ref">6</span> Forms</h1>
+                <div class="kss-description">
+                    <p>Covers styles used for forms.</p>
+
+                </div>
+            </section>
+            <section id="section-6.1" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">6.1</span> Table form</h1>
+                <div class="kss-description">
+                    <p>Aligned form using display table.</p>
+
+                </div>
+                <div class="kss-modifier-block">
+                    <div class="kss-modifier kss-modifier-original">
+                        <div class="kss-modifier-example">
+                            <form>
+   <div class="coveo-table-form">
+       <div class="form-group">
+           <label for="field1">
+               Field 1
+           </label>
+           <div class="value">
+               <input type="text" name="field1" placeholder="Field 1" value="Field 1">
+           </div>
+       </div>
+       <div class="form-group">
+           <label for="field2">
+               Field 2
+           </label>
+           <div class="value validated-input">
+               <input type="text" name="field2" placeholder="Field 2">
+               <div class="input-validation-error-details">
+                   <i class="coveo-sprites-misc-alert"></i>
+                   <span class="input-validation-error-message">Error message goes here!</span>
+               </div>
+           </div>
+       </div>
+       <div class="form-group input-validation-error">
+           <label for="field3">
+               Field 3
+           </label>
+           <div class="value validated-input">
+               <input type="text" name="field3" placeholder="Field 3">
+               <div class="input-validation-error-details">
+                   <i class="coveo-sprites-misc-alert"></i>
+                   <span class="input-validation-error-message">Error message goes here!</span>
+               </div>
+           </div>
+       </div>
+   </div>
+</form>
+                        </div>
+                    </div>
+                    <div class="kss-markup">
+                        <pre><code data-language="html">&lt;form&gt;
+   &lt;div class=&quot;coveo-table-form&quot;&gt;
+       &lt;div class=&quot;form-group&quot;&gt;
+           &lt;label for=&quot;field1&quot;&gt;
+               Field 1
+           &lt;/label&gt;
+           &lt;div class=&quot;value&quot;&gt;
+               &lt;input type=&quot;text&quot; name=&quot;field1&quot; placeholder=&quot;Field 1&quot; value=&quot;Field 1&quot;&gt;
+           &lt;/div&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;form-group&quot;&gt;
+           &lt;label for=&quot;field2&quot;&gt;
+               Field 2
+           &lt;/label&gt;
+           &lt;div class=&quot;value validated-input&quot;&gt;
+               &lt;input type=&quot;text&quot; name=&quot;field2&quot; placeholder=&quot;Field 2&quot;&gt;
+               &lt;div class=&quot;input-validation-error-details&quot;&gt;
+                   &lt;i class=&quot;coveo-sprites-misc-alert&quot;&gt;&lt;/i&gt;
+                   &lt;span class=&quot;input-validation-error-message&quot;&gt;Error message goes here!&lt;/span&gt;
+               &lt;/div&gt;
+           &lt;/div&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;form-group input-validation-error&quot;&gt;
+           &lt;label for=&quot;field3&quot;&gt;
+               Field 3
+           &lt;/label&gt;
+           &lt;div class=&quot;value validated-input&quot;&gt;
+               &lt;input type=&quot;text&quot; name=&quot;field3&quot; placeholder=&quot;Field 3&quot;&gt;
+               &lt;div class=&quot;input-validation-error-details&quot;&gt;
+                   &lt;i class=&quot;coveo-sprites-misc-alert&quot;&gt;&lt;/i&gt;
+                   &lt;span class=&quot;input-validation-error-message&quot;&gt;Error message goes here!&lt;/span&gt;
+               &lt;/div&gt;
+           &lt;/div&gt;
+       &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section id="section-6.2" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">6.2</span> Block form (horizontal form)</h1>
+                <div class="kss-description">
+                    <p>Simple form</p>
+
+                </div>
+                <div class="kss-modifier-block">
+                    <div class="kss-modifier kss-modifier-original">
+                        <div class="kss-modifier-example">
+                            <form>
+   <div class="coveo-block-form">
+       <div class="form-group">
+           <label class="coveo-slide-toggle-label">
+               <input type="checkbox" class="coveo-slide-toggle {$modifiers}" checked>
+               <button></button>
+               <span class="toggle-label">Slide toggle label</span>
+           </label>
+       </div>
+       <div class="form-group">
+           <label class="coveo-slide-toggle-label">
+               <input type="checkbox" class="coveo-slide-toggle {$modifiers}">
+               <button></button>
+               <span class="toggle-label">Slide toggle label</span>
+           </label>
+       </div>
+   </div>
+</form>
+                        </div>
+                    </div>
+                    <div class="kss-markup">
+                        <pre><code data-language="html">&lt;form&gt;
+   &lt;div class=&quot;coveo-block-form&quot;&gt;
+       &lt;div class=&quot;form-group&quot;&gt;
+           &lt;label class=&quot;coveo-slide-toggle-label&quot;&gt;
+               &lt;input type=&quot;checkbox&quot; class=&quot;coveo-slide-toggle {$modifiers}&quot; checked&gt;
+               &lt;button&gt;&lt;/button&gt;
+               &lt;span class=&quot;toggle-label&quot;&gt;Slide toggle label&lt;/span&gt;
+           &lt;/label&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;form-group&quot;&gt;
+           &lt;label class=&quot;coveo-slide-toggle-label&quot;&gt;
+               &lt;input type=&quot;checkbox&quot; class=&quot;coveo-slide-toggle {$modifiers}&quot;&gt;
+               &lt;button&gt;&lt;/button&gt;
+               &lt;span class=&quot;toggle-label&quot;&gt;Slide toggle label&lt;/span&gt;
+           &lt;/label&gt;
+       &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section id="section-6.3" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">6.3</span> Coveo Flex Form</h1>
+                <div class="kss-description">
+                    <p>Simple form using flex display. Used for boxed coveo-slide-toggle-label.</p>
+
+                </div>
+                <div class="kss-modifier-block">
+                    <div class="kss-modifier kss-modifier-original">
+                        <div class="kss-modifier-example">
+                            <form>
+  <div class="coveo-flex-form">
+    <label class="coveo-slide-toggle-label boxed">
+      <span class="toggle-label">Simple text</span>
+      <input type="checkbox" class="coveo-slide-toggle">
+      <button></button>
+    </label>
+    <label class="coveo-slide-toggle-label boxed">
+      <span class="toggle-label">Simple text</span>
+      <input type="checkbox" class="coveo-slide-toggle">
+      <button></button>
+    </label>
+  </div>
+</form>
+                        </div>
+                    </div>
+                    <div class="kss-markup">
+                        <pre><code data-language="html">&lt;form&gt;
+  &lt;div class=&quot;coveo-flex-form&quot;&gt;
+    &lt;label class=&quot;coveo-slide-toggle-label boxed&quot;&gt;
+      &lt;span class=&quot;toggle-label&quot;&gt;Simple text&lt;/span&gt;
+      &lt;input type=&quot;checkbox&quot; class=&quot;coveo-slide-toggle&quot;&gt;
+      &lt;button&gt;&lt;/button&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;coveo-slide-toggle-label boxed&quot;&gt;
+      &lt;span class=&quot;toggle-label&quot;&gt;Simple text&lt;/span&gt;
+      &lt;input type=&quot;checkbox&quot; class=&quot;coveo-slide-toggle&quot;&gt;
+      &lt;button&gt;&lt;/button&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer class="kss-footer">
+        </footer>
+    </div>
+</div>
+<script src="public/kss.js"></script>
+<script src="public/jquery-1.11.2.min.js"></script>
+<script src="public/main.js"></script>
+<script src="js/CoveoStyleGuide.Dependencies.js"></script>
+<!--[if gt IE 8]><!-->
+<script src="public/rainbow.min.js"></script>
+<!--<![endif]-->
+</body>
+</html>
